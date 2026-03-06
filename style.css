@@ -196,4 +196,24 @@ transform:scale(1.05);
 75%{transform:translateX(-4px)}
 100%{transform:translateX(0)}
 
+
+}@media (max-width: 768px) {
+  .wrap {
+    width: 95%;
+    padding: 0 10px;
+  }
+
+  .layout {
+    grid-template-columns: 1fr; 
+  }
+
+  #options {
+    grid-template-columns: 1fr;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
 }
