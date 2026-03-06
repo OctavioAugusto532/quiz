@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Quiz de Videogame</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="wrap">
+
+<header>
+<div class="logo">QUIZ</div>
+
+<div>
+<h1>Show do Milhão - Videogame</h1>
+<p class="sub">Perguntas sobre jogos famosos</p>
+</div>
+</header>
+
+
+<div class="layout">
+
+<main class="card">
+
+<div id="question">carregando pergunta...</div>
+
+<div id="options"></div>
+
+<div class="controls">
+
+<button id="fiftyBtn">50/50</button>
+<button id="skipBtn">Pular</button>
+<button id="askBtn">Ajuda</button>
+
+<button id="stopBtn">Parar</button>
+
+</div>
+
+<p id="status"></p>
+
+<button id="restartBtn">Reiniciar</button>
+
+</main>
+
+
+<aside class="card">
+
+<h3>Prêmios</h3>
+
+<div id="ladder"></div>
+
+</aside>
+
+</div>
+
+</div>
+
+
+<div id="victory" class="overlay">
+<h2>Você ganhou!</h2>
+<p id="victoryMsg"></p>
+<button onclick="init()">Jogar de novo</button>
+</div>
+
+
+<div id="defeat" class="overlay">
+<h2>Fim de jogo</h2>
+<p id="defeatMsg"></p>
+<button onclick="init()">Tentar novamente</button>
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
